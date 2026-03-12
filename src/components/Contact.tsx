@@ -1,0 +1,47 @@
+function Contact() {
+  return (
+    <section id="contact">
+      <h2 className="section-title">Contact Us</h2>
+      <div className="contact-grid">
+        <div className="contact-card">
+          <div className="icon">📱</div>
+          <h4>Text</h4>
+          <a href="sms:587-821-7148">587-821-7148</a>
+          <p>(Preferred)</p>
+        </div>
+
+        <div className="contact-card">
+          <div className="icon">✈️</div>
+          <h4>Telegram</h4>
+          <a href="https://t.me/rostislavmmm" target="_blank" rel="noopener noreferrer">@rostislavmmm</a>
+        </div>
+
+        <div className="contact-card">
+          <div className="icon">📧</div>
+          <h4>Email</h4>
+          <a href="mailto:repaircenter2026@gmail.com">Email Us</a>
+        </div>
+
+        <div className="contact-card">
+          <div className="icon">💬</div>
+          <h4>WhatsApp</h4>
+          <a href="https://wa.me/380995204448" target="_blank" rel="noopener noreferrer">Message</a>
+        </div>
+
+        <div className="contact-card">
+          <div className="icon">📸</div>
+          <h4>Instagram</h4>
+          <a href="https://instagram.com/repaircenter99" target="_blank" rel="noopener noreferrer">@repaircenter99</a>
+        </div>
+
+        <div className="contact-card">
+          <div className="icon">📍</div>
+          <h4>Location</h4>
+          <p style={{ color: 'var(--text-primary)', fontWeight: 600 }}>Lethbridge, AB</p>
+        </div>
+      </div>
+    </section>
+  )
+}
+
+export default Contact
