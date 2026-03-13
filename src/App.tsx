@@ -14,9 +14,7 @@ function App() {
       <Hero />
       <div className="container">
         <Services />
-        <div className="section-divider"></div>
         <About />
-        <div className="section-divider"></div>
         <Contact />
         <Shipping />
         <Terms />
