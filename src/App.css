@@ -459,6 +459,43 @@ section {
     margin-top: 0.5rem;
 }
 
+/* GPU colored dropdown headers & dropdowns */
+.nvidia-header {
+    border-color: var(--nvidia-green);
+    border-left: 4px solid var(--nvidia-green);
+}
+
+.nvidia-header:hover {
+    border-color: var(--nvidia-green);
+    background: rgba(118, 185, 0, 0.05);
+}
+
+.amd-header {
+    border-color: var(--amd-red);
+    border-left: 4px solid var(--amd-red);
+}
+
+.amd-header:hover {
+    border-color: var(--amd-red);
+    background: rgba(237, 28, 36, 0.05);
+}
+
+.nvidia-header + .price-dropdown .price-item {
+    border-left: 3px solid var(--nvidia-green);
+}
+
+.nvidia-header + .price-dropdown .price-item.chip-price {
+    border-left: 3px solid #888;
+}
+
+.amd-header + .price-dropdown .price-item {
+    border-left: 3px solid var(--amd-red);
+}
+
+.amd-header + .price-dropdown .price-item.chip-price {
+    border-left: 3px solid #888;
+}
+
 /* GPU tier blocks - badges + price in one styled block */
 .gpu-tier {
     border-left: 6px solid var(--accent);
