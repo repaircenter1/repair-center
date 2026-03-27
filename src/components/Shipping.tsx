@@ -7,7 +7,7 @@ function Shipping() {
         <div className="step-card">
           <div className="step-number">1</div>
           <h4>Contact Us First</h4>
-          <p>Reach out via text, Telegram, or email to discuss your repair needs, timeline, and get a preliminary cost estimate before shipping.</p>
+          <p>Reach out via text, Telegram, or email to discuss your repair needs, timeline, and get a preliminary cost estimate before shipping. Please text or leave a voicemail — we may not answer unknown calls due to high volume of spam.</p>
         </div>
 
         <div className="step-card">
@@ -35,6 +35,7 @@ function Shipping() {
         <div className="carrier-badge">Purolator</div>
         <div className="carrier-badge">UPS</div>
         <div className="carrier-badge">FedEx</div>
+        <div className="carrier-badge">Local Drop-off in Lethbridge</div>
       </div>
 
       <p style={{ color: 'var(--text-secondary)', marginTop: '2rem', lineHeight: 1.8 }}>

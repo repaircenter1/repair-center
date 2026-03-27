@@ -78,7 +78,7 @@ nav {
 
 .logo {
     font-family: 'IBM Plex Mono', monospace;
-    font-size: 1.8rem;
+    font-size: 2.1rem;
     font-weight: 700;
     color: #fff;
     text-transform: uppercase;
@@ -221,12 +221,12 @@ nav {
 .container {
     max-width: 1400px;
     margin: 0 auto;
-    padding: 3rem 2rem;
+    padding: 2rem 2rem;
 }
 
 section {
     margin-bottom: 0;
-    padding-bottom: 3rem;
+    padding-bottom: 2rem;
 }
 
 /* Section Divider */
@@ -234,7 +234,7 @@ section {
     width: 100%;
     height: 1px;
     background: linear-gradient(90deg, transparent 0%, rgba(255,102,0,0.3) 15%, var(--accent) 50%, rgba(255,102,0,0.3) 85%, transparent 100%);
-    margin: 3rem 0;
+    margin: 2rem 0;
     position: relative;
 }
 
@@ -253,18 +253,18 @@ section {
 
 .section-title {
     font-family: 'IBM Plex Mono', monospace;
-    font-size: 3rem;
+    font-size: 2.4rem;
     font-weight: 900;
     text-transform: uppercase;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     margin-top: 0.5rem;
     color: var(--text-primary);
     position: relative;
-    border-left: 6px solid var(--accent);
+    border-left: 5px solid var(--accent);
     border-top: 1px solid var(--border);
     border-bottom: 1px solid var(--border);
     border-right: 1px solid var(--border);
-    padding: 0.4rem 1.5rem 0.4rem 20px;
+    padding: 0.3rem 1.2rem 0.3rem 16px;
     letter-spacing: 3px;
     background: linear-gradient(90deg, var(--secondary-bg) 0%, var(--secondary-bg) 60%, rgba(249,249,249,0.4) 85%, transparent 100%);
     user-select: text;
@@ -340,7 +340,7 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
+    padding: 0.8rem 1rem;
     background: var(--card-bg);
     border: 2px solid var(--border);
     cursor: pointer;
@@ -484,12 +484,20 @@ section {
     border-left: 3px solid var(--nvidia-green);
 }
 
+.nvidia-header + .price-dropdown .price-item:hover {
+    background: rgba(118, 185, 0, 0.06);
+}
+
 .nvidia-header + .price-dropdown .price-item.chip-price {
     border-left: 3px solid #888;
 }
 
 .amd-header + .price-dropdown .price-item {
     border-left: 3px solid var(--amd-red);
+}
+
+.amd-header + .price-dropdown .price-item:hover {
+    background: rgba(237, 28, 36, 0.06);
 }
 
 .amd-header + .price-dropdown .price-item.chip-price {
@@ -564,6 +572,97 @@ section {
     color: var(--amd-red);
 }
 
+/* Brand logos in main GPU headers */
+.brand-label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.brand-label .brand-logo {
+    width: 6rem;
+}
+
+.brand-logo {
+    height: 1.8rem;
+    width: auto;
+    object-fit: contain;
+    margin: -0.3rem 0 -0.3rem -0.5rem;
+}
+
+.brand-logo.nvidia-logo {
+    height: 2.4rem;
+    margin: -0.5rem 0 -0.5rem -0.5rem;
+}
+
+.brand-logo.amd-logo {
+    height: 2rem;
+    margin: -0.4rem 0 -0.4rem -0.5rem;
+}
+
+.brand-label .brand-text {
+    font-weight: 600;
+}
+
+/* Nested dropdowns inside brand groups — folder tree style */
+.price-dropdown > .price-category.nested {
+    margin-bottom: 0.8rem;
+    margin-left: 1.5rem;
+    position: relative;
+}
+
+.price-dropdown > .price-category.nested:first-child {
+    margin-top: 0.8rem;
+}
+
+.price-dropdown > .price-category.nested::before {
+    content: '';
+    position: absolute;
+    left: -1rem;
+    top: 0;
+    bottom: -0.8rem;
+    width: 1px;
+    background: rgba(180, 180, 180, 0.4);
+}
+
+.price-dropdown > .price-category.nested::after {
+    content: '';
+    position: absolute;
+    left: -1rem;
+    top: 1.1rem;
+    width: 0.8rem;
+    height: 1px;
+    background: rgba(180, 180, 180, 0.4);
+}
+
+.price-dropdown > .price-category.nested:last-child::before {
+    bottom: calc(100% - 1.1rem);
+}
+
+.price-category.nested .price-category-header {
+    font-size: 0.95rem;
+    padding: 0.7rem 1rem;
+    transition: background 0.2s;
+}
+
+.price-category.nested .price-category-header.nvidia-header:hover {
+    background: rgba(118, 185, 0, 0.08);
+}
+
+.price-category.nested .price-category-header.nvidia-header.selected,
+.price-category.nested .price-category-header.nvidia-header.selected:hover {
+    background: rgba(118, 185, 0, 0.15);
+}
+
+.price-category.nested .price-category-header.amd-header:hover {
+    background: rgba(237, 28, 36, 0.08);
+}
+
+.price-category.nested .price-category-header.amd-header.selected,
+.price-category.nested .price-category-header.amd-header.selected:hover {
+    background: rgba(237, 28, 36, 0.15);
+}
+
 /* Chip price items inside dropdowns */
 .price-item.chip-price {
     background: var(--card-bg);
@@ -610,37 +709,117 @@ section {
 
 .equipment-list {
     background: var(--card-bg);
-    padding: 2rem;
+    padding: 1.2rem 2rem;
     margin-top: 2rem;
     border: 1px solid var(--border);
 }
 
-.equipment-list h4 {
+.equipment-main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.equipment-main-header:hover {
+    opacity: 0.8;
+}
+
+.equipment-main-header h4 {
     font-family: 'IBM Plex Mono', monospace;
     color: var(--accent);
-    margin-bottom: 1rem;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
-.equipment-list ul {
-    list-style: none;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 0.8rem;
-}
-
-.equipment-list li {
-    color: var(--text-secondary);
-    padding-left: 1.5rem;
-    position: relative;
-}
-
-.equipment-list li::before {
-    content: '\25B8';
-    position: absolute;
-    left: 0;
+.equipment-toggle {
     color: var(--accent);
-    font-weight: 700;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    white-space: nowrap;
+}
+
+.equipment-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+}
+
+.equipment-content.active {
+    max-height: 2000px;
+}
+
+.equipment-content .equipment-grid {
+    margin-top: 1rem;
+}
+
+.equipment-grid {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.equipment-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.equipment-item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.7rem 1rem;
+    background: var(--secondary-bg);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent);
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 0.95rem;
+    color: var(--text-primary);
+    transition: all 0.3s;
+}
+
+.equipment-item-header:hover {
+    background: rgba(255, 102, 0, 0.05);
+    border-left-color: var(--accent);
+}
+
+.equipment-item-header.selected {
+    background: rgba(255, 102, 0, 0.08);
+}
+
+.equipment-item-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+}
+
+.equipment-item-body.active {
+    max-height: 500px;
+}
+
+.equipment-item-body p {
+    padding: 0.8rem 1rem;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: var(--text-secondary);
+    background: var(--secondary-bg);
+    border: 1px solid var(--border);
+    border-top: none;
+    border-left: 3px solid var(--accent);
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .equipment-grid {
+        flex-direction: column;
+    }
 }
 
 .about-stats {
@@ -679,42 +858,59 @@ section {
     font-weight: 600;
 }
 
-/* Contact Section - Single Line */
+/* Contact Section */
 .contact-grid {
-    display: flex;
-    justify-content: space-between;
-    gap: 1rem;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 0.8rem;
 }
 
 .contact-card {
     background: var(--secondary-bg);
-    padding: 1.5rem;
+    padding: 1.8rem 1rem;
     border: 1px solid var(--border);
     text-align: center;
     transition: all 0.3s;
-    flex: 1;
-    min-width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 160px;
 }
 
 .contact-card:hover {
     border-color: var(--accent);
     box-shadow: 0 5px 20px var(--shadow);
-    transform: translateY(-5px);
+    transform: translateY(-3px);
 }
 
 .contact-card .icon {
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
+    font-size: 2.8rem;
+    margin-bottom: 0.8rem;
+    line-height: 1;
+}
+
+.contact-icon {
+    width: 2.8rem;
+    height: 2.8rem;
+    object-fit: contain;
+    margin-bottom: 0.8rem;
+}
+
+.contact-icon.icon-flag {
+    width: 2.8rem;
+    height: auto;
+    border-radius: 2px;
 }
 
 .contact-card h4 {
     font-family: 'IBM Plex Mono', monospace;
     color: var(--text-primary);
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.4rem;
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
 }
 
 .contact-card a {
@@ -723,7 +919,7 @@ section {
     transition: color 0.3s;
     display: block;
     font-weight: 600;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
 }
 
 .contact-card a:hover {
@@ -733,8 +929,21 @@ section {
 
 .contact-card p {
     color: var(--text-secondary);
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     margin-top: 0.3rem;
+    font-style: italic;
+}
+
+@media (max-width: 1024px) {
+    .contact-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .contact-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 /* Shipping Section */
@@ -865,13 +1074,28 @@ footer {
 .social-links a {
     color: #ccc;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 2rem;
     transition: all 0.3s;
+    display: flex;
+    align-items: center;
 }
 
 .social-links a:hover {
     color: var(--accent);
     transform: translateY(-3px);
+}
+
+.footer-icon {
+    width: 2rem;
+    height: 2rem;
+    object-fit: contain;
+    filter: brightness(0.7);
+    transition: all 0.3s;
+}
+
+.social-links a:hover .footer-icon {
+    filter: brightness(1);
+    transform: scale(1.1);
 }
 
 .copyright {
@@ -898,7 +1122,7 @@ footer {
     }
 
     .section-title {
-        font-size: 2rem;
+        font-size: 1.6rem;
     }
 
     nav {

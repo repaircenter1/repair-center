@@ -3,9 +3,9 @@ function Footer() {
     <footer>
       <div className="footer-content">
         <div className="social-links">
-          <a href="https://t.me/rostislavmmm" target="_blank" rel="noopener noreferrer" title="Telegram">✈️</a>
-          <a href="https://wa.me/380995204448" target="_blank" rel="noopener noreferrer" title="WhatsApp">💬</a>
-          <a href="https://instagram.com/repaircenter99" target="_blank" rel="noopener noreferrer" title="Instagram">📸</a>
+          <a href="https://t.me/rostislavmmm" target="_blank" rel="noopener noreferrer" title="Telegram"><img src="/Telegram.png" alt="Telegram" className="footer-icon" /></a>
+          <a href="https://wa.me/380995204448" target="_blank" rel="noopener noreferrer" title="WhatsApp"><img src="/WhatsApp.png" alt="WhatsApp" className="footer-icon" /></a>
+          <a href="https://instagram.com/repaircenter99" target="_blank" rel="noopener noreferrer" title="Instagram"><img src="/instagram.png" alt="Instagram" className="footer-icon" /></a>
           <a href="mailto:repaircenter2026@gmail.com" title="Email">📧</a>
         </div>
         <p className="copyright">&copy; 2026 REPAIR CENTER | Professional Electronics Repair | Lethbridge, AB</p>
