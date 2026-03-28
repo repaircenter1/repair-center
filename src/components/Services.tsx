@@ -169,7 +169,7 @@ function Services() {
           <div className="pricing-section">
             <h4>Diagnostic <span className="free-badge">Free</span></h4>
 
-            <h4>GPU Repair & Reballing (Labor Only)</h4>
+            <h4>GPU Repair &amp; Reballing<br />(Labor Only)</h4>
 
             <div className="price-category">
               <div className="price-category-header nvidia-header" onClick={() => toggleDropdown('nvidia-all')}>
@@ -403,7 +403,7 @@ function Services() {
               </div>
             </div>
 
-            <h4>Maintenance Services (Labor + Materials)</h4>
+            <h4>Maintenance Services<br />(Labor + Materials)</h4>
             <div className="price-item">
               <span>Thermal Paste Replacement</span>
               <span>$20</span>
@@ -438,7 +438,7 @@ function Services() {
               <span>$150</span>
             </div>
 
-            <h4>Thermal Services (Labor + Materials)</h4>
+            <h4>Thermal Services<br />(Labor + Materials)</h4>
             <div className="price-item">
               <span>CPU/GPU Thermal Interface Replacement</span>
               <span>$40</span>
