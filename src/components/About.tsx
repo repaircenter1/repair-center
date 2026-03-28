@@ -77,7 +77,7 @@ function About() {
 
         <p>What sets us apart is our commitment to handling the most challenging repairs that others turn away. From precision BGA rework to complex component-level diagnostics, we bring technical expertise and dedication to every project. We specialize in restoring inter-layer PCB damage and post-burn recovery that most service centers cannot handle.</p>
 
-        <div className="equipment-list">
+        {import.meta.env.DEV && <div className="equipment-list">
           <div className="equipment-main-header" onClick={() => toggleEquipment('equipment-content')}>
             <h4>Professional Equipment & Tools</h4>
             <span className="equipment-toggle" id="equipment-toggle-text">See Details</span>
@@ -107,7 +107,7 @@ function About() {
               ))}
             </div>
           </div>
-        </div>
+        </div>}
 
         <div className="about-stats">
           <div className="stat-box">
