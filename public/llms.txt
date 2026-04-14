@@ -1,0 +1,34 @@
+# Repair Center
+
+> Professional electronics repair in Lethbridge, AB, Canada. Specializing in GPU repair, IC reballing, VRAM replacement, ASIC mining equipment repair, laptop motherboard repair, BGA soldering, and microsoldering. Free diagnostics. Accepting mail-in shipments from anywhere in Canada.
+
+Over 10 years of experience in component-level and board-level electronics repair. We repair devices other shops won't touch — including burn damage recovery, inter-layer PCB damage, and complex post-repair from other service centers.
+
+## Services
+
+- [GPU Repair](https://repair-center.ca/#services): IC reballing, VRAM replacement, MOSFET/VRM repair, trace repair. No display, artifacting, code 43, short circuit diagnostics. NVIDIA RTX 2000–5000 and AMD RX 5000–9000 series.
+- [Laptop Repair](https://repair-center.ca/#services): Component-level CPU/GPU/PCH replacement, IC reballing, power system repair, board-level diagnostics. No power, no display, liquid damage recovery.
+- [ASIC Mining Repair](https://repair-center.ca/#services): Hashboard repair, IC chip replacement, BGA rework, PSU diagnostics. Antminer S19/S21/S19XP, L7/L9, E9, Z15 series.
+- [BGA Soldering & Microsoldering](https://repair-center.ca/#services): IC reballing, BGA rework, socket replacement (AM4/AM5/LGA1200/1700/1851), trace repair, MOSFET replacement, burn damage recovery.
+
+## Pricing
+
+- GPU Repair (Labor Only): from $100
+- Laptop Component Replacement: $100–500
+- ASIC Hashboard Repair: from $80
+- BGA Soldering: priced by chip cost
+- Diagnostics: Free
+
+## Contact
+
+- Website: https://repair-center.ca
+- Phone/Text: 587-821-7148 (text preferred)
+- Telegram: @rostislavmmm
+- Email: repaircenter2026@gmail.com
+- Location: Lethbridge, AB, Canada
+- Mail-in: Accepted from anywhere in Canada
+
+## Optional
+
+- [Shipping Info](https://repair-center.ca/#shipping): Canada Post, FedEx, UPS, Purolator accepted. Local drop-off in Lethbridge available.
+- [Instagram](https://instagram.com/repaircenter99): Repair photos and case studies

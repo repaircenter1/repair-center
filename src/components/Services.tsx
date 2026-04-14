@@ -18,7 +18,7 @@ function Services() {
       <div className="services-grid">
         <div className="service-card">
           <h3>GPU Repair</h3>
-          <p>Professional GPU repair including chip reballing, VRAM replacement, and power system fixes. We repair all modern graphics cards — NVIDIA RTX 2000 to RTX 5000 series and AMD RX 5000–9000 series. Ship from anywhere in Canada.</p>
+          <p>Professional GPU repair including IC reballing, VRAM replacement, MOSFET/VRM repair, and trace repair. Component-level diagnostics for no display, artifacting, code 43, and short circuit faults. NVIDIA RTX 2000–5000 and AMD RX 5000–9000 series. Mail-in from anywhere in Canada.</p>
 
           <div className="pricing-section">
             <h4>Diagnostic <span className="free-badge">Free</span></h4>
@@ -275,7 +275,7 @@ function Services() {
 
         <div className="service-card">
           <h3>Laptop Repair</h3>
-          <p>Complete laptop repair services including CPU/GPU/PCH replacement, power system repair, and thermal management. Burn damage recovery and post-repair from other service centers. We repair laptops shipped from anywhere in Canada.</p>
+          <p>Component-level laptop repair: CPU/GPU/PCH IC reballing and replacement, power system repair, board-level diagnostics for no power, no display, and liquid damage. Burn damage recovery and post-repair from other service centers. Mail-in from anywhere in Canada.</p>
 
           <div className="pricing-section">
             <h4>Diagnostic <span className="free-badge">Free</span></h4>
@@ -307,7 +307,7 @@ function Services() {
 
         <div className="service-card">
           <h3>ASIC Mining Repair</h3>
-          <p>Expert repair of cryptocurrency mining equipment including hashboard repair, chip replacement, and power supply fixes. Specialized in handling complex ASIC failures across Canada.</p>
+          <p>Board-level repair of cryptocurrency mining equipment: hashboard repair, IC chip replacement, BGA rework, and power supply diagnostics. Specialized in component-level ASIC failures — Antminer S19/S21, L7/L9, E9, Z15 series. Mail-in across Canada.</p>
 
           <div className="pricing-section">
             <h4>Diagnostic <span className="free-badge">Free</span></h4>
@@ -453,7 +453,7 @@ function Services() {
 
         <div className="service-card">
           <h3>BGA Soldering & Microsoldering</h3>
-          <p>Motherboard repair, socket replacement, power supply restoration, BGA soldering, and microsoldering for complex electronic devices. Inter-layer PCB damage and burn recovery. We tackle the repairs others won't — accepting shipments across Canada.</p>
+          <p>Board-level and component-level repair: IC reballing, BGA rework, socket replacement, trace repair, MOSFET replacement, and inter-layer PCB damage recovery. Microsoldering for complex electronics others won't touch. Burn damage recovery. Mail-in across Canada.</p>
 
           <div className="pricing-section">
             <h4>Diagnostic <span className="free-badge">Free</span></h4>
