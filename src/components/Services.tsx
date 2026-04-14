@@ -17,152 +17,6 @@ function Services() {
       <h2 className="section-title">Our Services</h2>
       <div className="services-grid">
         <div className="service-card">
-          <h3>ASIC Mining Repair</h3>
-          <p>Expert repair of cryptocurrency mining equipment including hashboard repair, chip replacement, and power supply fixes. Specialized in handling complex ASIC failures across Canada.</p>
-
-          <div className="pricing-section">
-            <h4>Diagnostic <span className="free-badge">Free</span></h4>
-
-            <h4>Hashboard Repair (Single Board)</h4>
-
-            <div className="price-category">
-              <div className="price-category-header" onClick={() => toggleDropdown('s19')}>
-                <span>S19 Series</span>
-                <span>&#9660;</span>
-              </div>
-              <div className="price-dropdown" id="s19">
-                <div className="price-item">
-                  <span>S19/T19/S19PRO/KS5 Aluminium</span>
-                  <span>$100</span>
-                </div>
-                <div className="price-item">
-                  <span>S19K Pro</span>
-                  <span>$100-150</span>
-                </div>
-                <div className="price-item">
-                  <span>S19 Hydro</span>
-                  <span>$140</span>
-                </div>
-                <div className="price-item chip-price">
-                  <span>Chip BM1398BB (S19/T19/S19Pro/S19 hydro) / BM1362 (S19j/S19jPro)</span>
-                  <span>$15</span>
-                </div>
-                <div className="price-item chip-price">
-                  <span>Chip BM1366 (S19K Pro/S19XP/S19XP hydro)</span>
-                  <span>$20</span>
-                </div>
-              </div>
-            </div>
-
-            <div className="price-category">
-              <div className="price-category-header" onClick={() => toggleDropdown('s21')}>
-                <span>S21 Series</span>
-                <span>&#9660;</span>
-              </div>
-              <div className="price-dropdown" id="s21">
-                <div className="price-item">
-                  <span>S21/T21/S21+</span>
-                  <span>$120</span>
-                </div>
-                <div className="price-item">
-                  <span>S21 Hydro</span>
-                  <span>$140</span>
-                </div>
-                <div className="price-item chip-price">
-                  <span>Chip BM1368 (S21/T21)</span>
-                  <span>$30</span>
-                </div>
-                <div className="price-item chip-price">
-                  <span>Chip BM1370 (S21+/S21XP)</span>
-                  <span>$30</span>
-                </div>
-              </div>
-            </div>
-
-            <div className="price-category">
-              <div className="price-category-header" onClick={() => toggleDropdown('l7l9')}>
-                <span>L7/L9 Series</span>
-                <span>&#9660;</span>
-              </div>
-              <div className="price-dropdown" id="l7l9">
-                <div className="price-item">
-                  <span>L7</span>
-                  <span>$100</span>
-                </div>
-                <div className="price-item">
-                  <span>L9</span>
-                  <span>$120</span>
-                </div>
-                <div className="price-item chip-price">
-                  <span>Chip BM1489 (L7)</span>
-                  <span>$20</span>
-                </div>
-                <div className="price-item chip-price">
-                  <span>Chip BM1491 (L9)</span>
-                  <span>$95</span>
-                </div>
-              </div>
-            </div>
-
-            <div className="price-category">
-              <div className="price-category-header" onClick={() => toggleDropdown('e9')}>
-                <span>E9 Series</span>
-                <span>&#9660;</span>
-              </div>
-              <div className="price-dropdown" id="e9">
-                <div className="price-item">
-                  <span>E9</span>
-                  <span>$200</span>
-                </div>
-                <div className="price-item">
-                  <span>E9 Pro</span>
-                  <span>$200</span>
-                </div>
-                <div className="price-item chip-price">
-                  <span>Chip BM2280 (E9 PRO)</span>
-                  <span>$300</span>
-                </div>
-              </div>
-            </div>
-
-            <div className="price-category">
-              <div className="price-category-header" onClick={() => toggleDropdown('z15')}>
-                <span>Z15 Series</span>
-                <span>&#9660;</span>
-              </div>
-              <div className="price-dropdown" id="z15">
-                <div className="price-item">
-                  <span>Z15</span>
-                  <span>$150</span>
-                </div>
-                <div className="price-item">
-                  <span>Z15 Pro</span>
-                  <span>$200</span>
-                </div>
-                <div className="price-item chip-price">
-                  <span>Chip BM1746AA (Z15)</span>
-                  <span>$900</span>
-                </div>
-              </div>
-            </div>
-
-            <div className="price-item">
-              <span>Other Models</span>
-              <span>from $80</span>
-            </div>
-
-            <h4>Power Supply Repair</h4>
-            <div className="price-item">
-              <span>PSU Repair</span>
-              <span>$150</span>
-            </div>
-
-            <p className="price-note"><span className="price-asterisk">*</span> Using your own donor boards for chip harvesting is preferred and more cost-effective, especially for bulk repairs</p>
-            <p className="price-note"><span className="price-asterisk">*</span> Please inquire for current pricing and availability</p>
-          </div>
-        </div>
-
-        <div className="service-card">
           <h3>GPU Repair</h3>
           <p>Professional GPU repair including chip reballing, VRAM replacement, and power system fixes. We repair all modern graphics cards — NVIDIA RTX 2000 to RTX 5000 series and AMD RX 5000–9000 series. Ship from anywhere in Canada.</p>
 
@@ -448,6 +302,152 @@ function Services() {
               <span>$50-150</span>
             </div>
             <p className="price-note"><span className="price-asterisk">*</span> Price includes labor + materials</p>
+          </div>
+        </div>
+
+        <div className="service-card">
+          <h3>ASIC Mining Repair</h3>
+          <p>Expert repair of cryptocurrency mining equipment including hashboard repair, chip replacement, and power supply fixes. Specialized in handling complex ASIC failures across Canada.</p>
+
+          <div className="pricing-section">
+            <h4>Diagnostic <span className="free-badge">Free</span></h4>
+
+            <h4>Hashboard Repair (Single Board)</h4>
+
+            <div className="price-category">
+              <div className="price-category-header" onClick={() => toggleDropdown('s19')}>
+                <span>S19 Series</span>
+                <span>&#9660;</span>
+              </div>
+              <div className="price-dropdown" id="s19">
+                <div className="price-item">
+                  <span>S19/T19/S19PRO/KS5 Aluminium</span>
+                  <span>$100</span>
+                </div>
+                <div className="price-item">
+                  <span>S19K Pro</span>
+                  <span>$100-150</span>
+                </div>
+                <div className="price-item">
+                  <span>S19 Hydro</span>
+                  <span>$140</span>
+                </div>
+                <div className="price-item chip-price">
+                  <span>Chip BM1398BB (S19/T19/S19Pro/S19 hydro) / BM1362 (S19j/S19jPro)</span>
+                  <span>$15</span>
+                </div>
+                <div className="price-item chip-price">
+                  <span>Chip BM1366 (S19K Pro/S19XP/S19XP hydro)</span>
+                  <span>$20</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="price-category">
+              <div className="price-category-header" onClick={() => toggleDropdown('s21')}>
+                <span>S21 Series</span>
+                <span>&#9660;</span>
+              </div>
+              <div className="price-dropdown" id="s21">
+                <div className="price-item">
+                  <span>S21/T21/S21+</span>
+                  <span>$120</span>
+                </div>
+                <div className="price-item">
+                  <span>S21 Hydro</span>
+                  <span>$140</span>
+                </div>
+                <div className="price-item chip-price">
+                  <span>Chip BM1368 (S21/T21)</span>
+                  <span>$30</span>
+                </div>
+                <div className="price-item chip-price">
+                  <span>Chip BM1370 (S21+/S21XP)</span>
+                  <span>$30</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="price-category">
+              <div className="price-category-header" onClick={() => toggleDropdown('l7l9')}>
+                <span>L7/L9 Series</span>
+                <span>&#9660;</span>
+              </div>
+              <div className="price-dropdown" id="l7l9">
+                <div className="price-item">
+                  <span>L7</span>
+                  <span>$100</span>
+                </div>
+                <div className="price-item">
+                  <span>L9</span>
+                  <span>$120</span>
+                </div>
+                <div className="price-item chip-price">
+                  <span>Chip BM1489 (L7)</span>
+                  <span>$20</span>
+                </div>
+                <div className="price-item chip-price">
+                  <span>Chip BM1491 (L9)</span>
+                  <span>$95</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="price-category">
+              <div className="price-category-header" onClick={() => toggleDropdown('e9')}>
+                <span>E9 Series</span>
+                <span>&#9660;</span>
+              </div>
+              <div className="price-dropdown" id="e9">
+                <div className="price-item">
+                  <span>E9</span>
+                  <span>$200</span>
+                </div>
+                <div className="price-item">
+                  <span>E9 Pro</span>
+                  <span>$200</span>
+                </div>
+                <div className="price-item chip-price">
+                  <span>Chip BM2280 (E9 PRO)</span>
+                  <span>$300</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="price-category">
+              <div className="price-category-header" onClick={() => toggleDropdown('z15')}>
+                <span>Z15 Series</span>
+                <span>&#9660;</span>
+              </div>
+              <div className="price-dropdown" id="z15">
+                <div className="price-item">
+                  <span>Z15</span>
+                  <span>$150</span>
+                </div>
+                <div className="price-item">
+                  <span>Z15 Pro</span>
+                  <span>$200</span>
+                </div>
+                <div className="price-item chip-price">
+                  <span>Chip BM1746AA (Z15)</span>
+                  <span>$900</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="price-item">
+              <span>Other Models</span>
+              <span>from $80</span>
+            </div>
+
+            <h4>Power Supply Repair</h4>
+            <div className="price-item">
+              <span>PSU Repair</span>
+              <span>$150</span>
+            </div>
+
+            <p className="price-note"><span className="price-asterisk">*</span> Using your own donor boards for chip harvesting is preferred and more cost-effective, especially for bulk repairs</p>
+            <p className="price-note"><span className="price-asterisk">*</span> Please inquire for current pricing and availability</p>
           </div>
         </div>
 

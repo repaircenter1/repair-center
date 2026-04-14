@@ -297,9 +297,9 @@ section {
 }
 
 .services-grid:has(.service-card:hover) .service-card:not(:hover) {
-    opacity: 0.75;
-    filter: blur(0.5px);
-    transform: scale(0.99);
+    opacity: 1;
+    filter: none;
+    transform: none;
 }
 
 .service-card h3 {
