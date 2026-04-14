@@ -17,8 +17,8 @@ function Services() {
       <h2 className="section-title">Our Services</h2>
       <div className="services-grid">
         <div className="service-card">
-          <h3>Mining Devices (ASIC's)</h3>
-          <p>Expert repair of cryptocurrency mining equipment including hashboard repair, chip replacement, and power supply fixes. Specialized in handling complex ASIC failures.</p>
+          <h3>ASIC Mining Repair</h3>
+          <p>Expert repair of cryptocurrency mining equipment including hashboard repair, chip replacement, and power supply fixes. Specialized in handling complex ASIC failures across Canada.</p>
 
           <div className="pricing-section">
             <h4>Diagnostic <span className="free-badge">Free</span></h4>
@@ -163,8 +163,8 @@ function Services() {
         </div>
 
         <div className="service-card">
-          <h3>Graphics Cards (GPU)</h3>
-          <p>Professional GPU repair including chip reballing, memory replacement, and power system fixes. We handle all modern graphics cards from RTX 2000 series to RTX 5000 series and AMD RX cards.</p>
+          <h3>GPU Repair</h3>
+          <p>Professional GPU repair including chip reballing, VRAM replacement, and power system fixes. We repair all modern graphics cards — NVIDIA RTX 2000 to RTX 5000 series and AMD RX 5000–9000 series. Ship from anywhere in Canada.</p>
 
           <div className="pricing-section">
             <h4>Diagnostic <span className="free-badge">Free</span></h4>
@@ -420,8 +420,8 @@ function Services() {
         </div>
 
         <div className="service-card">
-          <h3>Laptops</h3>
-          <p>Complete laptop repair services including CPU/GPU/PCH replacement, power system repair, and thermal management. Restoration of complex power systems, burn damage recovery, and post-repair from other service centers.</p>
+          <h3>Laptop Repair</h3>
+          <p>Complete laptop repair services including CPU/GPU/PCH replacement, power system repair, and thermal management. Burn damage recovery and post-repair from other service centers. We repair laptops shipped from anywhere in Canada.</p>
 
           <div className="pricing-section">
             <h4>Diagnostic <span className="free-badge">Free</span></h4>
@@ -452,8 +452,8 @@ function Services() {
         </div>
 
         <div className="service-card">
-          <h3>Other Electronics</h3>
-          <p>Motherboard repair, socket replacement, power supply restoration, BGA soldering services, and microsoldering for complex electronic devices. Restoration of inter-layer PCB damage and burn recovery. We tackle the repairs others won't.</p>
+          <h3>BGA Soldering & Microsoldering</h3>
+          <p>Motherboard repair, socket replacement, power supply restoration, BGA soldering, and microsoldering for complex electronic devices. Inter-layer PCB damage and burn recovery. We tackle the repairs others won't — accepting shipments across Canada.</p>
 
           <div className="pricing-section">
             <h4>Diagnostic <span className="free-badge">Free</span></h4>
