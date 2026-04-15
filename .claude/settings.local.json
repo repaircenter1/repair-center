@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(git pull:*)",
+      "Bash(gh api:*)",
+      "Bash(gh.exe api:*)",
+      "Bash(magick --version)",
+      "Bash(npx sharp-cli:*)",
+      "Bash(ffmpeg -version)",
+      "Bash(magick identify:*)",
+      "Bash(/c/WINDOWS/system32/magick identify:*)",
+      "Bash(cmd.exe /c \"magick identify c:\\\\Users\\\\Microsoft\\\\repair-center\\\\nvidiageforce.avif c:\\\\Users\\\\Microsoft\\\\repair-center\\\\amd.avif\")",
+      "Bash(cmd.exe /c \"magick identify c:\\\\Users\\\\Microsoft\\\\repair-center\\\\nvidiageforce.avif\")",
+      "Bash(node -e \"const sharp = require\\(''sharp''\\); sharp\\(''c:/Users/Microsoft/repair-center/nvidiageforce.avif''\\).metadata\\(\\).then\\(m => console.log\\(''nvidia:'', m.width, ''x'', m.height\\)\\); sharp\\(''c:/Users/Microsoft/repair-center/amd.avif''\\).metadata\\(\\).then\\(m => console.log\\(''amd:'', m.width, ''x'', m.height\\)\\);\")",
+      "Bash(npm install:*)",
+      "Bash(node -e \"const sharp = require\\(''sharp''\\); sharp\\(''c:/Users/Microsoft/repair-center/nvidiageforce.avif''\\).metadata\\(\\).then\\(m => console.log\\(''nvidia:'', m.width, ''x'', m.height, ''channels:'', m.channels, ''hasAlpha:'', m.hasAlpha\\)\\); sharp\\(''c:/Users/Microsoft/repair-center/amd.avif''\\).metadata\\(\\).then\\(m => console.log\\(''amd:'', m.width, ''x'', m.height, ''channels:'', m.channels, ''hasAlpha:'', m.hasAlpha\\)\\);\")",
+      "Bash(node -e \":*)"
+    ]
+  }
+}
