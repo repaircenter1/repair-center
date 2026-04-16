@@ -123,6 +123,16 @@
       ]
     }
     </script>
+    <script>
+      // GitHub Pages SPA routing: restore path from 404.html redirect
+      (function() {
+        var p = new URLSearchParams(window.location.search).get('p');
+        if (p) {
+          var q = new URLSearchParams(window.location.search).get('q');
+          window.history.replaceState(null, '', p + (q ? '?' + q : '') + window.location.hash);
+        }
+      })();
+    </script>
     <!-- Clarity tracking code for https://repair-center.ca/ -->
     <script>
         (function(c,l,a,r,i,t,y){

@@ -7,12 +7,12 @@ function Header() {
           <div className="logo">REPAIR CENTER</div>
         </div>
         <ul className="nav-links">
-          <li><a href="#services">Services</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#faq">FAQ</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="#shipping">Shipping</a></li>
-          <li><a href="#terms">Terms</a></li>
+          <li><a href="/#services">Services</a></li>
+          <li><a href="/#about">About</a></li>
+          <li><a href="/#faq">FAQ</a></li>
+          <li><a href="/#contact">Contact</a></li>
+          <li><a href="/#shipping">Shipping</a></li>
+          <li><a href="/#terms">Terms</a></li>
         </ul>
       </nav>
     </header>

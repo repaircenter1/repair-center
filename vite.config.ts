@@ -8,6 +8,7 @@ export default defineConfig({
     react(),
     Sitemap({
       hostname: 'https://repair-center.ca',
+      dynamicRoutes: ['/gpu-repair'],
     }),
   ],
   base: '/',

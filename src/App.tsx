@@ -1,3 +1,4 @@
+import { Routes, Route } from 'react-router-dom'
 import Header from './components/Header'
 import Hero from './components/Hero'
 import Services from './components/Services'
@@ -7,8 +8,9 @@ import Contact from './components/Contact'
 import Shipping from './components/Shipping'
 import Terms from './components/Terms'
 import Footer from './components/Footer'
+import GpuRepairPage from './pages/GpuRepairPage'
 
-function App() {
+function HomePage() {
   return (
     <>
       <Header />
@@ -23,6 +25,15 @@ function App() {
       </div>
       <Footer />
     </>
+  )
+}
+
+function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/gpu-repair" element={<GpuRepairPage />} />
+    </Routes>
   )
 }
 
