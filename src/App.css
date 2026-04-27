@@ -1162,7 +1162,7 @@ section {
 }
 
 @media (max-width: 768px) {
-    .faq-question { font-size: 0.88rem; padding: 0.8rem 0.2rem; }
+    .faq-question { font-size: 0.88rem; padding: 0.5rem 0.2rem; }
     .faq-answer p { font-size: 0.85rem; }
 }
 
@@ -1402,10 +1402,17 @@ section {
     line-height: 1.2;
 }
 
+.process-step-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.4rem;
+}
+
 .process-step h3 {
     font-size: 1rem;
     font-weight: 700;
-    margin-bottom: 0.4rem;
+    margin-bottom: 0;
 }
 
 .process-step p {
@@ -1506,10 +1513,14 @@ section {
 }
 
 @media (max-width: 768px) {
-    .service-page-hero { min-height: unset; }
-    .service-page-hero-content { padding-top: 2rem; padding-bottom: 2rem; }
-    .service-page-hero h1 { font-size: 2rem; color: #fff; }
-    .service-page-intro { color: #fff; }
+    .service-page-hero { height: 300px; min-height: unset; }
+    .service-page-hero-bg { height: 500px; background-size: 100% auto; background-position: center top; }
+    .service-page-hero-overlay { height: 500px; }
+    .service-page-hero-content { position: absolute; top: 0; left: 0; right: 0; bottom: 0; padding: 0; }
+    .service-page-hero h1 { position: absolute; top: 1.25rem; left: 1rem; right: 1rem; }
+    .service-page-intro { position: absolute; top: 10rem; left: 1rem; right: 1rem; }
+    .service-page-hero h1 { font-size: 1.6rem; color: #fff; margin-bottom: 0; }
+    .service-page-intro { color: #fff; font-size: 0.88rem; line-height: 1.55; }
     .service-page-hero-overlay {
         background: linear-gradient(
             to right,
@@ -1519,7 +1530,15 @@ section {
         );
     }
     .service-page-body { padding-top: 0.5rem !important; }
-    .service-page-section:first-child { padding-top: 1rem; }
+    .service-page-section { padding: 2rem 0; }
+    .service-page-section:first-child { padding-top: 0.75rem; }
+    .service-page-cta { padding-bottom: 1rem; }
+    .service-page-cta p { margin-bottom: 0.75rem; }
+    .pricing-note-top { flex-direction: column; align-items: flex-start; gap: 0.25rem; }
+    .pricing-note-top .separator { display: none; }
+    .pricing-two-col .service-card, .service-page-section > .service-card { padding: 0.6rem 1rem !important; }
+    .pricing-two-col .pricing-section h4, .service-page-section > .service-card .pricing-section h4 { margin-bottom: 0.25rem; padding-bottom: 0.25rem; }
+    .pricing-section > .price-category.nested:first-of-type { margin-top: 0.4rem; }
     .supported-models { grid-template-columns: 1fr; }
     .symptoms-grid { grid-template-columns: 1fr; }
     .process-step { flex-direction: column; gap: 0.5rem; }

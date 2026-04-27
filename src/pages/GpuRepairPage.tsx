@@ -106,39 +106,33 @@ function GpuRepairPage() {
         <div className="container service-page-body">
           <section className="service-page-section" id="symptoms">
             <h2 className="section-title">Symptoms We Fix</h2>
-            <div className="symptoms-grid">
-              <div className="symptom-item">
-                <h3>No Display / Black Screen</h3>
-                <p>GPU powers on but produces no video output. Common causes: failed VRAM, open circuit on the display output path, or BGA solder joint failure on the GPU chip itself.</p>
-              </div>
-              <div className="symptom-item">
-                <h3>Artifacting</h3>
-                <p>Visual glitches, corrupted pixels, color blocks, or flickering on screen. Usually caused by one or more failed GDDR5/GDDR6/GDDR6X/GDDR7 memory chips or VRAM solder joint degradation. Can also result from a dirty or damaged display output port or video cable — worth ruling out before sending in for repair.</p>
-              </div>
-              <div className="symptom-item">
-                <h3>Driver Error 43 / Code 43</h3>
-                <p>Windows Device Manager reports Code 43. Often a VRAM fault or GPU chip issue causing the driver to crash during initialization. Can also be caused by failed VRM components or unstable power rails supplying the VRAM, GPU core, or logic circuits on the board. Component-level diagnosis required.</p>
-              </div>
-              <div className="symptom-item">
-                <h3>GPU Not Detected</h3>
-                <p>Card not recognized by the system at all — no POST, no Device Manager entry. Typically a power delivery failure (VRM/MOSFET) or PCIe connector damage.</p>
-              </div>
-              <div className="symptom-item">
-                <h3>Crashes & Blue Screens</h3>
-                <p>System crashes during gaming or under GPU load. Can be VRAM instability, thermal issues, or VRM components failing under sustained load.</p>
-              </div>
-              <div className="symptom-item">
-                <h3>Mining Damage</h3>
-                <p>GPUs used in cryptocurrency mining often develop VRAM failure from continuous high-temperature operation. We replace failed chips and reball degraded joints.</p>
-              </div>
-              <div className="symptom-item">
-                <h3>Throttling, Stuttering & Freezes</h3>
-                <p>If your system freezes, games stutter, or performance drops in spikes, the GPU may need servicing — dried thermal paste, degraded thermal pads, or blocked heatsink fins are common causes. A thermal service often restores full performance.</p>
-              </div>
-              <div className="symptom-item">
-                <h3>Bought a GPU That Doesn't Work</h3>
-                <p>Purchased a card secondhand and it's not functioning? We inspect GPUs for prior repairs, hidden damage, remarked chips, or misrepresented condition — so you know exactly what you have before investing further.</p>
-              </div>
+            <div className="faq-col">
+              {[
+                { id: 'sym-1', q: 'No Display / Black Screen', a: 'GPU powers on but produces no video output. Common causes: failed VRAM, open circuit on the display output path, or BGA solder joint failure on the GPU chip itself.' },
+                { id: 'sym-2', q: 'Artifacting', a: 'Visual glitches, corrupted pixels, color blocks, or flickering on screen. Usually caused by one or more failed GDDR5/GDDR6/GDDR6X/GDDR7 memory chips or VRAM solder joint degradation. Can also result from a dirty or damaged display output port or video cable — worth ruling out before sending in for repair.' },
+                { id: 'sym-3', q: 'Driver Error 43 / Code 43', a: 'Windows Device Manager reports Code 43. Often a VRAM fault or GPU chip issue causing the driver to crash during initialization. Can also be caused by failed VRM components or unstable power rails supplying the VRAM, GPU core, or logic circuits on the board. Component-level diagnosis required.' },
+                { id: 'sym-4', q: 'GPU Not Detected', a: 'Card not recognized by the system at all — no POST, no Device Manager entry. Typically a power delivery failure (VRM/MOSFET) or PCIe connector damage.' },
+                { id: 'sym-5', q: 'Crashes & Blue Screens', a: 'System crashes during gaming or under GPU load. Can be VRAM instability, thermal issues, or VRM components failing under sustained load.' },
+                { id: 'sym-6', q: 'Mining Damage', a: 'GPUs used in cryptocurrency mining often develop VRAM failure from continuous high-temperature operation. We replace failed chips and reball degraded joints.' },
+                { id: 'sym-7', q: 'Throttling, Stuttering & Freezes', a: 'If your system freezes, games stutter, or performance drops in spikes, the GPU may need servicing — dried thermal paste, degraded thermal pads, or blocked heatsink fins are common causes. A thermal service often restores full performance.' },
+                { id: 'sym-8', q: "Bought a GPU That Doesn't Work", a: "Purchased a card secondhand and it's not functioning? We inspect GPUs for prior repairs, hidden damage, remarked chips, or misrepresented condition — so you know exactly what you have before investing further." },
+              ].map(s => (
+                <div key={s.id} className="faq-item">
+                  <div className="faq-question" onClick={() => {
+                    const body = document.getElementById(s.id + '-body')
+                    if (body) {
+                      body.classList.toggle('active')
+                      body.previousElementSibling?.classList.toggle('selected')
+                    }
+                  }}>
+                    <span>{s.q}</span>
+                    <span className="faq-chevron">&#9660;</span>
+                  </div>
+                  <div className="faq-answer" id={s.id + '-body'}>
+                    <p>{s.a}</p>
+                  </div>
+                </div>
+              ))}
             </div>
           </section>
 
@@ -177,34 +171,22 @@ function GpuRepairPage() {
           <section className="service-page-section" id="process">
             <h2 className="section-title">What We Do</h2>
             <div className="process-steps">
-              <div className="process-step">
-                <span className="step-num">01</span>
-                <div>
-                  <h3>Component-Level Diagnostics</h3>
-                  <p>We use the right tools for the job — oscilloscope for signal and power rail analysis, thermal camera to detect hot spots and failing components, and specialized software including MATS and T-Server for VRAM and GPU diagnostics. Proper diagnosis leads to a real solution, not wasted money on guesswork.</p>
+              {[
+                { num: '01', title: 'Component-Level Diagnostics', body: 'We use the right tools for the job — oscilloscope for signal and power rail analysis, thermal camera to detect hot spots and failing components, and specialized software including MATS and T-Server for VRAM and GPU diagnostics. Proper diagnosis leads to a real solution, not wasted money on guesswork.' },
+                { num: '02', title: 'IC Reballing & VRAM Replacement', body: 'VRAM and GPU chip replacement is performed using a Termopro IK650 infrared rework station and Quick soldering stations — delivering precise, controlled heat profiles with no overheating. We use high-quality flux and thorough post-solder cleaning. After repair, the board looks the way it came from the factory — not like it survived a campfire.' },
+                { num: '03', title: 'VRM & MOSFET Repair', body: 'We restore GPU power delivery systems through proper diagnostics and VRM configuration — replacing failed MOSFETs, inductors, and capacitors at the component level. In cases of phase burnout, we can reconfigure the VRM to operate on a reduced number of phases, adapting the power system to what the board can reliably support.' },
+                { num: '04', title: 'Post-Repair Stress Testing', body: 'Every repaired card goes through extended stress testing — synthetic benchmarks, VRAM stress tools, and thermal monitoring — before shipping back.' },
+              ].map(s => (
+                <div key={s.num} className="process-step">
+                  <div style={{ flex: 1 }}>
+                    <div className="process-step-header">
+                      <h3>{s.title}</h3>
+                      <span className="step-num">{s.num}</span>
+                    </div>
+                    <p>{s.body}</p>
+                  </div>
                 </div>
-              </div>
-              <div className="process-step">
-                <span className="step-num">02</span>
-                <div>
-                  <h3>IC Reballing & VRAM Replacement</h3>
-                  <p>VRAM and GPU chipreplacement is performed using a Termopro IK650 infrared rework station and Quick soldering stations — delivering precise, controlled heat profiles with no overheating. We use high-quality flux and thorough post-solder cleaning. After repair, the board looks the way it came from the factory — not like it survived a campfire.</p>
-                </div>
-              </div>
-              <div className="process-step">
-                <span className="step-num">03</span>
-                <div>
-                  <h3>VRM & MOSFET Repair</h3>
-                  <p>We restore GPU power delivery systems through proper diagnostics and VRM configuration — replacing failed MOSFETs, inductors, and capacitors at the component level. In cases of phase burnout, we can reconfigure the VRM to operate on a reduced number of phases, adapting the power system to what the board can reliably support.</p>
-                </div>
-              </div>
-              <div className="process-step">
-                <span className="step-num">04</span>
-                <div>
-                  <h3>Post-Repair Stress Testing</h3>
-                  <p>Every repaired card goes through extended stress testing — synthetic benchmarks, VRAM stress tools, and thermal monitoring — before shipping back.</p>
-                </div>
-              </div>
+              ))}
             </div>
           </section>
 
@@ -238,7 +220,11 @@ function GpuRepairPage() {
 
           <section className="service-page-section" id="gpu-pricing">
             <h2 className="section-title">Pricing</h2>
-            <p className="pricing-note-top">Diagnostic <span className="free-badge">Free</span> &nbsp;·&nbsp; Labor only unless parts are specified</p>
+            <p className="pricing-note-top">
+              <span>Diagnostic <span className="free-badge">Free</span></span>
+              <span className="separator">&nbsp;·&nbsp;</span>
+              <span>* Labor only unless parts are specified</span>
+            </p>
 
             <div className="pricing-two-col">
               {/* NVIDIA */}
