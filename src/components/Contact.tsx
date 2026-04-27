@@ -6,7 +6,7 @@ function Contact() {
         <div className="contact-card">
           <div className="icon">📱</div>
           <h4>Mobile</h4>
-          <a href="sms:587-821-7148">587-821-7148</a>
+          <a href="sms:+15878217148">+1 587-821-7148</a>
           <p>Text preferred</p>
         </div>
 

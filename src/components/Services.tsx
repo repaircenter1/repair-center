@@ -1,4 +1,5 @@
 import { useCallback } from 'react'
+import { Link } from 'react-router-dom'
 
 function Services() {
   const toggleDropdown = useCallback((id: string) => {
@@ -17,11 +18,10 @@ function Services() {
       <h2 className="section-title">Our Services</h2>
       <div className="services-grid">
         <div className="service-card">
-          <h3>GPU Repair</h3>
+          <h3><Link to="/gpu-repair" className="service-card-title-link">GPU Repair</Link></h3>
           <p>Professional GPU repair including IC reballing, VRAM replacement, MOSFET/VRM repair, and trace repair. Component-level diagnostics for no display, artifacting, code 43, and short circuit faults. NVIDIA RTX 2000–5000 and AMD RX 5000–9000 series. Mail-in from anywhere in Canada.</p>
-
           <div className="pricing-section">
-            <h4>Diagnostic <span className="free-badge">Free</span></h4>
+            <h4 className="diagnostic-row">Diagnostic <span className="free-badge">Free</span><Link to="/gpu-repair" className="details-link">Details →</Link></h4>
 
             <h4>GPU Repair &amp; Reballing<br />(Labor Only)</h4>
 
@@ -270,6 +270,12 @@ function Services() {
               <span>Thermal Pads Replacement</span>
               <span>$50-200</span>
             </div>
+          </div>
+
+          <div className="service-card-nav">
+            <Link to="/gpu-repair#gallery" className="service-card-nav-btn">Gallery</Link>
+            <Link to="/gpu-repair#symptoms" className="service-card-nav-btn">Symptoms</Link>
+            <Link to="/gpu-repair#process" className="service-card-nav-btn">Repair Process</Link>
           </div>
         </div>
 

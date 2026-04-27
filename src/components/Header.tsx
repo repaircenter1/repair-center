@@ -1,11 +1,13 @@
+import { Link } from 'react-router-dom'
+
 function Header() {
   return (
     <header>
       <nav>
-        <div className="logo-container">
+        <Link to="/" className="logo-container">
           <img src="/image_1.jpg" alt="Repair Center Logo" className="logo-image" />
           <div className="logo">REPAIR CENTER</div>
-        </div>
+        </Link>
         <ul className="nav-links">
           <li><a href="/#services">Services</a></li>
           <li><a href="/#about">About</a></li>
