@@ -1415,6 +1415,23 @@ section {
     margin-bottom: 0;
 }
 
+@media (min-width: 769px) {
+    .process-step { display: flex; gap: 1.5rem; align-items: flex-start; }
+    .process-step > div { flex: 1; }
+    .process-step-header { flex-direction: row-reverse; justify-content: flex-end; gap: 1.5rem; margin-bottom: 0.4rem; }
+    .process-step h3 { margin-bottom: 0; }
+
+    #symptoms .faq-col { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.5rem; margin-top: 2rem; }
+    #symptoms .faq-item { background: var(--secondary-bg); border: 1px solid var(--border); border-left: 3px solid var(--accent); border-bottom: 1px solid var(--border); padding: 1.25rem 1.5rem; }
+    #symptoms .faq-question { padding: 0; font-size: 0.95rem; font-weight: 700; cursor: default; pointer-events: none; color: var(--text-primary); }
+    #symptoms .faq-chevron { display: none; }
+    #symptoms .faq-answer { max-height: none !important; }
+    #symptoms .faq-answer p { padding: 0.5rem 0 0; font-size: 0.88rem; color: var(--text-secondary); line-height: 1.7; }
+
+    .pricing-note-top { flex-direction: row; align-items: center; }
+    .pricing-note-top .separator { display: inline; }
+}
+
 .process-step p {
     font-size: 0.9rem;
     color: var(--text-secondary);
