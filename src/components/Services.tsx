@@ -21,9 +21,7 @@ function Services() {
           <h3><Link to="/gpu-repair" className="service-card-title-link">GPU Repair</Link></h3>
           <p>Professional GPU repair including IC reballing, VRAM replacement, MOSFET/VRM repair, and trace repair. Component-level diagnostics for no display, artifacting, code 43, and short circuit faults. NVIDIA RTX 2000–5000 and AMD RX 5000–9000 series. Mail-in from anywhere in Canada.</p>
           <div className="pricing-section">
-            <h4 className="diagnostic-row">Diagnostic <span className="free-badge">Free</span><Link to="/gpu-repair" className="details-link">Details →</Link></h4>
-
-            <h4>GPU Repair &amp; Reballing<br />(Labor Only)</h4>
+            <h4 style={{display:'flex',alignItems:'center',justifyContent:'space-between'}}><span>GPU Repair &amp; Reballing<br />(Labor Only)</span><Link to="/gpu-repair" className="details-link">Details →</Link></h4>
 
             <div className="price-category">
               <div className="price-category-header nvidia-header" onClick={() => toggleDropdown('nvidia-all')}>
@@ -257,19 +255,21 @@ function Services() {
               </div>
             </div>
 
-            <h4>Maintenance Services<br />(Labor + Materials)</h4>
+            <h4>Maintenance Services</h4>
             <div className="price-item">
-              <span>Thermal Paste Replacement</span>
-              <span>$20</span>
-            </div>
-            <div className="price-item">
-              <span>Phase Change Thermal Pad</span>
+              <span>GPU Cleaning + Thermal Paste Replacement</span>
               <span>$50</span>
             </div>
-            <div className="price-item">
-              <span>Thermal Pads Replacement</span>
-              <span>$50-200</span>
+            <div className="price-item chip-price">
+              <span>Add-on: Thermal Pads Replacement</span>
+              <span>+$50-200</span>
             </div>
+            <div className="price-item chip-price">
+              <span>Add-on: Phase Change Thermal Pad</span>
+              <span>+$30</span>
+            </div>
+            <p className="price-note"><span className="price-asterisk">*</span> Add-ons are available with the base cleaning service.</p>
+            <p className="price-note"><span className="price-asterisk">*</span> Diagnostic is free</p>
           </div>
 
           <div className="service-card-nav">
@@ -284,30 +284,43 @@ function Services() {
           <p>Component-level laptop repair: CPU/GPU/PCH IC reballing and replacement, power system repair, board-level diagnostics for no power, no display, and liquid damage. Burn damage recovery and post-repair from other service centers. Mail-in from anywhere in Canada.</p>
 
           <div className="pricing-section">
-            <h4>Diagnostic <span className="free-badge">Free</span></h4>
-
             <h4>Component Replacement</h4>
             <div className="price-item">
               <span>CPU / GPU / PCH Replacement</span>
               <span>$100-500</span>
             </div>
-            <p className="price-note"><span className="price-asterisk">*</span> Price depends on chip cost + chip purchase price</p>
-
-            <div className="price-item" style={{ marginTop: '1rem' }}>
+            <div className="price-item">
               <span>Power System Repair</span>
               <span>$150</span>
             </div>
+            <div className="price-item">
+              <span>Display Replacement</span>
+              <span>$100</span>
+            </div>
+            <div className="price-item">
+              <span>Windows Reinstallation</span>
+              <span>$100</span>
+            </div>
+            <div className="price-item">
+              <span>SSD NVMe / RAM Installation</span>
+              <span>$50</span>
+            </div>
 
-            <h4>Thermal Services<br />(Labor + Materials)</h4>
+            <h4>Maintenance Services</h4>
             <div className="price-item">
-              <span>CPU/GPU Thermal Interface Replacement</span>
-              <span>$40</span>
+              <span>Laptop Cleaning + Thermal Paste Replacement</span>
+              <span>$50</span>
             </div>
-            <div className="price-item">
-              <span>Thermal Pads Replacement</span>
-              <span>$50-150</span>
+            <div className="price-item chip-price">
+              <span>Add-on: Thermal Pads Replacement</span>
+              <span>+$30-150</span>
             </div>
-            <p className="price-note"><span className="price-asterisk">*</span> Price includes labor + materials</p>
+            <div className="price-item chip-price">
+              <span>Add-on: Phase-Change Pad / Liquid Metal Application</span>
+              <span>+$30</span>
+            </div>
+            <p className="price-note"><span className="price-asterisk">*</span> Add-ons are available with the base cleaning service.</p>
+            <p className="price-note"><span className="price-asterisk">*</span> Diagnostic is free</p>
           </div>
         </div>
 
@@ -316,8 +329,6 @@ function Services() {
           <p>Board-level repair of cryptocurrency mining equipment: hashboard repair, IC chip replacement, BGA rework, and power supply diagnostics. Specialized in component-level ASIC failures — Antminer S19/S21, L7/L9, E9, Z15 series. Mail-in across Canada.</p>
 
           <div className="pricing-section">
-            <h4>Diagnostic <span className="free-badge">Free</span></h4>
-
             <h4>Hashboard Repair (Single Board)</h4>
 
             <div className="price-category">
@@ -454,6 +465,7 @@ function Services() {
 
             <p className="price-note"><span className="price-asterisk">*</span> Using your own donor boards for chip harvesting is preferred and more cost-effective, especially for bulk repairs</p>
             <p className="price-note"><span className="price-asterisk">*</span> Please inquire for current pricing and availability</p>
+            <p className="price-note"><span className="price-asterisk">*</span> Diagnostic is free</p>
           </div>
         </div>
 
@@ -462,8 +474,6 @@ function Services() {
           <p>Board-level and component-level repair: IC reballing, BGA rework, socket replacement, trace repair, MOSFET replacement, and inter-layer PCB damage recovery. Microsoldering for complex electronics others won't touch. Burn damage recovery. Mail-in across Canada.</p>
 
           <div className="pricing-section">
-            <h4>Diagnostic <span className="free-badge">Free</span></h4>
-
             <h4>Board-Level Repair</h4>
             <div className="price-item">
               <span>PC Motherboard Repair</span>
@@ -491,6 +501,7 @@ function Services() {
               <span>Priced by chip cost</span>
             </div>
             <p className="price-note">BGA pricing calculated based on component value and complexity</p>
+            <p className="price-note"><span className="price-asterisk">*</span> Diagnostic is free</p>
           </div>
         </div>
       </div>
