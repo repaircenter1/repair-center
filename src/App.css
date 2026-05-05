@@ -335,7 +335,7 @@ section {
 }
 
 .price-category {
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.8rem;
 }
 
 .price-category-header {
@@ -1807,7 +1807,7 @@ footer {
     }
 
     .price-category {
-        margin-bottom: 1rem;
+        margin-bottom: 0.5rem;
     }
 
     .price-category-header {
