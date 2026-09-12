@@ -321,10 +321,11 @@ function GpuRepairPage() {
             {/* Maintenance — full width below */}
             <div className="service-card" style={{ marginTop: '1rem' }}>
               <div className="pricing-section">
-                <h4>Maintenance (Labor + Materials)</h4>
-                <div className="price-item"><span>Thermal Paste Replacement</span><span>$20</span></div>
-                <div className="price-item"><span>Phase Change Thermal Pad</span><span>$50</span></div>
-                <div className="price-item"><span>Thermal Pads Replacement</span><span>$50-200</span></div>
+                <h4>Maintenance Services</h4>
+                <div className="price-item"><span>GPU Cleaning + Thermal Paste Replacement</span><span>$50</span></div>
+                <div className="price-item chip-price"><span>Add-on: Thermal Pads Replacement</span><span>+$50-200</span></div>
+                <div className="price-item chip-price"><span>Add-on: Phase Change Thermal Pad</span><span>+$30</span></div>
+                <p className="price-note"><span className="price-asterisk">*</span> Add-ons are available with the base cleaning service.</p>
               </div>
             </div>
           </section>
