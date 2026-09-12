@@ -13,8 +13,8 @@ Over 10 years of experience in component-level and board-level electronics repai
 
 ## Pricing
 
-- GPU Repair (Labor Only): from $100
-- Laptop Component Replacement: $100–500
+- GPU Repair (Labor Only): from $150
+- Laptop Component Replacement: $150–500
 - ASIC Hashboard Repair: from $80
 - BGA Soldering: priced by chip cost
 - Diagnostics: Free

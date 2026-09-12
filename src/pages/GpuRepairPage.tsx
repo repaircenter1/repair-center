@@ -234,27 +234,28 @@ function GpuRepairPage() {
                   <div className="price-category nested">
                     <div className="price-category-header nvidia-header" onClick={() => toggleDropdown('gpu-page-rtx2000')}><span>RTX 2000 Series</span><span>&#9660;</span></div>
                     <div className="price-dropdown" id="gpu-page-rtx2000">
-                      <div className="price-item"><span>RTX 2060 / 2060 Super</span><span>$100</span></div>
-                      <div className="price-item"><span>RTX 2070 / 2070 Super</span><span>$120</span></div>
-                      <div className="price-item"><span>RTX 2080 / 2080 Super</span><span>$120</span></div>
-                      <div className="price-item"><span>RTX 2080 Ti / TITAN RTX</span><span>$150</span></div>
-                      <div className="price-item chip-price"><span>GDDR6 1GB</span><span>$15</span></div>
+                      <div className="price-item"><span>RTX 2060 / 2060 Super</span><span>$150</span></div>
+                      <div className="price-item"><span>RTX 2070 / 2070 Super</span><span>$150</span></div>
+                      <div className="price-item"><span>RTX 2080 / 2080 Super</span><span>$150</span></div>
+                      <div className="price-item"><span>RTX 2080 Ti / TITAN RTX</span><span>$200</span></div>
+                      <div className="price-item chip-price"><span>GDDR6 1GB</span><span>$20</span></div>
                     </div>
                   </div>
                   <div className="price-category nested">
                     <div className="price-category-header nvidia-header" onClick={() => toggleDropdown('gpu-page-rtx3000')}><span>RTX 3000 Series</span><span>&#9660;</span></div>
                     <div className="price-dropdown" id="gpu-page-rtx3000">
-                      <div className="price-item"><span>RTX 3060</span><span>$120</span></div>
-                      <div className="price-item"><span>RTX 3060 Ti / 3070 / 3070 Ti</span><span>$120</span></div>
-                      <div className="price-item"><span>RTX 3080 / 3080 Ti / 3090 / 3090 Ti</span><span>$150</span></div>
-                      <div className="price-item chip-price"><span>GDDR6 1GB</span><span>$15</span></div>
-                      <div className="price-item chip-price"><span>GDDR6X / GDDR6X 2GB</span><span>$15 / $60-80</span></div>
+                      <div className="price-item"><span>RTX 3060</span><span>$150</span></div>
+                      <div className="price-item"><span>RTX 3060 Ti / 3070 / 3070 Ti</span><span>$150</span></div>
+                      <div className="price-item"><span>RTX 3080 / 3080 Ti</span><span>$150</span></div>
+                      <div className="price-item"><span>RTX 3090 / 3090 Ti</span><span>$200</span></div>
+                      <div className="price-item chip-price"><span>GDDR6 1GB</span><span>$20</span></div>
+                      <div className="price-item chip-price"><span>GDDR6X / GDDR6X 2GB</span><span>$20 / $60-80</span></div>
                     </div>
                   </div>
                   <div className="price-category nested">
                     <div className="price-category-header nvidia-header" onClick={() => toggleDropdown('gpu-page-rtx4000')}><span>RTX 4000 Series</span><span>&#9660;</span></div>
                     <div className="price-dropdown" id="gpu-page-rtx4000">
-                      <div className="price-item"><span>RTX 4060 / 4060 Ti</span><span>$120</span></div>
+                      <div className="price-item"><span>RTX 4060 / 4060 Ti</span><span>$150</span></div>
                       <div className="price-item"><span>RTX 4070 / 4070 Super / 4070 Ti</span><span>$150</span></div>
                       <div className="price-item"><span>RTX 4070 Ti Super / 4080 / 4080 Super</span><span>$200</span></div>
                       <div className="price-item"><span>RTX 4090</span><span>$300</span></div>
@@ -265,11 +266,11 @@ function GpuRepairPage() {
                   <div className="price-category nested">
                     <div className="price-category-header nvidia-header" onClick={() => toggleDropdown('gpu-page-rtx5000')}><span>RTX 5000 Series</span><span>&#9660;</span></div>
                     <div className="price-dropdown" id="gpu-page-rtx5000">
-                      <div className="price-item"><span>RTX 5060 / 5060 Ti</span><span>$120</span></div>
+                      <div className="price-item"><span>RTX 5060 / 5060 Ti</span><span>$150</span></div>
                       <div className="price-item"><span>RTX 5070</span><span>$150</span></div>
                       <div className="price-item"><span>RTX 5070 Ti / 5080</span><span>$200</span></div>
                       <div className="price-item"><span>RTX 5090</span><span>$500</span></div>
-                      <div className="price-item chip-price"><span>GDDR7 2GB</span><span>$85</span></div>
+                      <div className="price-item chip-price"><span>GDDR7 2GB</span><span>$100</span></div>
                     </div>
                   </div>
                 </div>
@@ -282,23 +283,24 @@ function GpuRepairPage() {
                   <div className="price-category nested">
                     <div className="price-category-header amd-header" onClick={() => toggleDropdown('gpu-page-rx5000')}><span>RX 5000 Series</span><span>&#9660;</span></div>
                     <div className="price-dropdown" id="gpu-page-rx5000">
-                      <div className="price-item"><span>RX 5600 XT / 5700 / 5700 XT</span><span>$120</span></div>
-                      <div className="price-item chip-price"><span>GDDR6 1GB</span><span>$15</span></div>
+                      <div className="price-item"><span>RX 5600 XT / 5700 / 5700 XT</span><span>$150</span></div>
+                      <div className="price-item chip-price"><span>GDDR6 1GB</span><span>$20</span></div>
                     </div>
                   </div>
                   <div className="price-category nested">
                     <div className="price-category-header amd-header" onClick={() => toggleDropdown('gpu-page-rx6000')}><span>RX 6000 Series</span><span>&#9660;</span></div>
                     <div className="price-dropdown" id="gpu-page-rx6000">
-                      <div className="price-item"><span>RX 6600 / 6600 XT / 6650 XT</span><span>$120</span></div>
-                      <div className="price-item"><span>RX 6700 / 6700 XT / 6750 / 6750 XT</span><span>$120</span></div>
-                      <div className="price-item"><span>RX 6800 / 6800 XT / 6900 XT / 6950 XT</span><span>$150</span></div>
+                      <div className="price-item"><span>RX 6600 / 6600 XT / 6650 XT</span><span>$150</span></div>
+                      <div className="price-item"><span>RX 6700 / 6700 XT / 6750 / 6750 XT</span><span>$150</span></div>
+                      <div className="price-item"><span>RX 6800 / 6800 XT</span><span>$150</span></div>
+                      <div className="price-item"><span>RX 6900 XT / 6950 XT</span><span>$200</span></div>
                       <div className="price-item chip-price"><span>GDDR6 2GB</span><span>$20-50</span></div>
                     </div>
                   </div>
                   <div className="price-category nested">
                     <div className="price-category-header amd-header" onClick={() => toggleDropdown('gpu-page-rx7000')}><span>RX 7000 Series</span><span>&#9660;</span></div>
                     <div className="price-dropdown" id="gpu-page-rx7000">
-                      <div className="price-item"><span>RX 7600 / 7600 XT</span><span>$120</span></div>
+                      <div className="price-item"><span>RX 7600 / 7600 XT</span><span>$150</span></div>
                       <div className="price-item"><span>RX 7700 XT / 7800 XT</span><span>$150</span></div>
                       <div className="price-item"><span>RX 7900 / 7900 XT / 7900 XTX</span><span>$200</span></div>
                       <div className="price-item chip-price"><span>GDDR6 2GB</span><span>$20-50</span></div>
