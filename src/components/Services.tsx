@@ -57,7 +57,7 @@ function Services() {
                     </div>
                     <div className="price-item chip-price">
                       <span>GDDR6 1GB</span>
-                      <span>$20</span>
+                      <span>$50</span>
                     </div>
                   </div>
                 </div>
@@ -78,7 +78,7 @@ function Services() {
                     </div>
                     <div className="price-item">
                       <span>RTX 3080 / 3080 Ti</span>
-                      <span>$150</span>
+                      <span>$180</span>
                     </div>
                     <div className="price-item">
                       <span>RTX 3090 / 3090 Ti</span>
@@ -86,15 +86,15 @@ function Services() {
                     </div>
                     <div className="price-item chip-price">
                       <span>GDDR6 1GB</span>
-                      <span>$20</span>
+                      <span>$50</span>
                     </div>
                     <div className="price-item chip-price">
                       <span>GDDR6X</span>
-                      <span>$20</span>
+                      <span>$50</span>
                     </div>
                     <div className="price-item chip-price">
                       <span>GDDR6X 2GB</span>
-                      <span>$60-80</span>
+                      <span>$100</span>
                     </div>
                   </div>
                 </div>
@@ -111,7 +111,7 @@ function Services() {
                     </div>
                     <div className="price-item">
                       <span>RTX 4070 / 4070 Super / 4070 Ti</span>
-                      <span>$150</span>
+                      <span>$200</span>
                     </div>
                     <div className="price-item">
                       <span>RTX 4070 Ti Super / 4080 / 4080 Super</span>
@@ -119,15 +119,15 @@ function Services() {
                     </div>
                     <div className="price-item">
                       <span>RTX 4090</span>
-                      <span>$300</span>
+                      <span>$400</span>
                     </div>
                     <div className="price-item chip-price">
                       <span>GDDR6 2GB</span>
-                      <span>$20-50</span>
+                      <span>$50</span>
                     </div>
                     <div className="price-item chip-price">
                       <span>GDDR6X 2GB</span>
-                      <span>$60-80</span>
+                      <span>$100</span>
                     </div>
                   </div>
                 </div>
@@ -144,11 +144,11 @@ function Services() {
                     </div>
                     <div className="price-item">
                       <span>RTX 5070</span>
-                      <span>$150</span>
+                      <span>$200</span>
                     </div>
                     <div className="price-item">
                       <span>RTX 5070 Ti / 5080</span>
-                      <span>$200</span>
+                      <span>$300</span>
                     </div>
                     <div className="price-item">
                       <span>RTX 5090</span>
@@ -181,7 +181,7 @@ function Services() {
                     </div>
                     <div className="price-item chip-price">
                       <span>GDDR6 1GB</span>
-                      <span>$20</span>
+                      <span>$50</span>
                     </div>
                   </div>
                 </div>
@@ -210,7 +210,7 @@ function Services() {
                     </div>
                     <div className="price-item chip-price">
                       <span>GDDR6 2GB</span>
-                      <span>$20-50</span>
+                      <span>$50</span>
                     </div>
                   </div>
                 </div>
@@ -235,7 +235,7 @@ function Services() {
                     </div>
                     <div className="price-item chip-price">
                       <span>GDDR6 2GB</span>
-                      <span>$20-50</span>
+                      <span>$50</span>
                     </div>
                   </div>
                 </div>
@@ -256,7 +256,7 @@ function Services() {
                     </div>
                     <div className="price-item chip-price">
                       <span>GDDR6 2GB</span>
-                      <span>$20-50</span>
+                      <span>$50</span>
                     </div>
                   </div>
                 </div>
