@@ -11,7 +11,7 @@ function Contact() {
         </div>
 
         <div className="contact-card">
-          <img src="/Telegram.png" alt="Telegram" className="contact-icon" />
+          <img src="/Telegram.webp" alt="Telegram" className="contact-icon" />
           <h4>Telegram</h4>
           <a href="https://t.me/rostislavmmm" target="_blank" rel="noopener noreferrer">@rostislavmmm</a>
         </div>
@@ -23,19 +23,19 @@ function Contact() {
         </div>
 
         <div className="contact-card">
-          <img src="/WhatsApp.png" alt="WhatsApp" className="contact-icon" />
+          <img src="/WhatsApp.webp" alt="WhatsApp" className="contact-icon" />
           <h4>WhatsApp</h4>
           <a href="https://wa.me/380995204448" target="_blank" rel="noopener noreferrer">Message</a>
         </div>
 
         <div className="contact-card">
-          <img src="/instagram.png" alt="Instagram" className="contact-icon" />
+          <img src="/instagram.webp" alt="Instagram" className="contact-icon" />
           <h4>Instagram</h4>
           <a href="https://instagram.com/repaircenter99" target="_blank" rel="noopener noreferrer">@repaircenter99</a>
         </div>
 
         <div className="contact-card">
-          <img src="/location.png" alt="Location" className="contact-icon icon-flag" />
+          <img src="/location.webp" alt="Location" className="contact-icon icon-flag" />
           <h4>Location</h4>
           <p style={{ color: 'var(--text-primary)', fontWeight: 600 }}>Lethbridge, AB</p>
         </div>
