@@ -1,5 +1,6 @@
 import { useEffect, useCallback, useState } from 'react'
 import Header from '../components/Header'
+import { scrollToHashOrTop } from '../scrollToHash'
 
 const portfolioData = [
   { id: 1,  tag: 'BGA Reballing',      caption: 'NVIDIA GA102 GPU chip — removed from EVGA RTX 3090 for BGA reballing' },
@@ -40,7 +41,7 @@ import Footer from '../components/Footer'
 
 function GpuRepairPage() {
   useEffect(() => {
-    window.scrollTo(0, 0)
+    scrollToHashOrTop()
     document.title = 'GPU Repair in Lethbridge, Canada | NVIDIA RTX & AMD RX — Repair Center'
     const desc = document.querySelector('meta[name="description"]')
     if (desc) desc.setAttribute('content', 'No display, artifacting, Error 43, VRAM failure — we fix it. Component-level GPU repair in Lethbridge. Free diagnostics. Mail-in from anywhere in Canada.')

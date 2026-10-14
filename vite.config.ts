@@ -8,6 +8,7 @@ const SITE = 'https://repair-center.ca'
 // with HTTP 404, so search engines treat the page as missing. Emitting
 // gpu-repair.html next to index.html makes Pages serve /gpu-repair with 200.
 // Keep title/description in sync with the page's useEffect.
+// scripts/prerender.mjs then fills each of these files with the rendered page.
 const staticRoutes = [
   {
     path: 'gpu-repair',
@@ -19,11 +20,16 @@ const staticRoutes = [
 const escapeHtml = (s: string) => s.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;')
 
 function staticRoutePages(): Plugin {
+  let ssrBuild = false
   return {
     name: 'static-route-pages',
     apply: 'build',
     enforce: 'post',
+    configResolved(config) {
+      ssrBuild = !!config.build.ssr
+    },
     generateBundle(_, bundle) {
+      if (ssrBuild) return
       const index = bundle['index.html']
       if (!index || index.type !== 'asset') throw new Error('static-route-pages: index.html not found in bundle')
       const html = typeof index.source === 'string' ? index.source : new TextDecoder().decode(index.source)
